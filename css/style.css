@@ -1,0 +1,279 @@
+/*   
+Description: Hand crafted portfolio by Timothy Murphy
+Author: Timothy Murphy
+*/
+
+/* General CSS */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Amaranth', cursive;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+a {
+  display: block;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 100%;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.row:after,
+.container:after {
+  clear: both;
+}
+
+.col-6 {
+  position: relative;
+  float: left;
+  width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.clearfix:before,
+.clearfix:after,
+.dl-horizontal dd:before,
+.dl-horizontal dd:after,
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.modal-footer:before,
+.modal-footer:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after,
+.dl-horizontal dd:after,
+.container:after,
+.container-fluid:after,
+.row:after,
+.modal-footer:after {
+  clear: both;
+}
+
+p {
+  color: #484848;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+/* End General CSS */
+
+/* Menu and Components */
+.menu {
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 13.5%;
+  opacity: 0.96;
+  background-color: #000000;
+  background-image: url("../images/TheLogo.png"); 
+  background-size: 6.4%;
+  background-repeat: no-repeat;
+  background-position: 75px 38%;
+  z-index: 999;
+  min-height: 84px;
+  margin-left: -15px;
+  margin-right: -15px;
+  text-align: center;
+}
+
+.menu-items {
+  width:50%;
+  margin: auto;
+  padding-top: 2%;
+
+}
+
+.menu-items a {
+  display: inline;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 15px 14px;
+  font-size: 20px;
+  color: #ffffff;
+  margin: auto;
+
+}
+
+.menu-items a:hover {
+  color: #99e6ff;
+}
+
+.icons {
+  display: block;
+  float: right;
+  margin-right: 1%;
+  margin-bottom: 1%;
+}
+
+.icons a {
+  display: inline;
+}
+
+.icons i {
+  color: #ffffff;
+  font-size: 28px;
+  text-shadow: 1px 1px 1px #181818;
+  padding: 5px;
+}
+
+.icons i:hover {
+  color:#99e6ff;
+}
+/* End Menu */
+
+/* Home-Page Components */
+.name {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  font-family: 'Yellowtail', cursive;
+  font-size: 60px;
+  font-weight: 800;
+  text-align: center;
+  color: #000000;
+  margin-top: 19%;
+}
+
+.decoration-bar {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 0;
+  background-color: #000000;
+  opacity: 0.98;
+}
+/* End Home-Page */
+
+/* Portfolio Components */
+.align-center {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.portfolio-image {
+  display: block;
+  width: 500px;
+  height: 290px;
+  box-shadow: 3px 3px 5px 3px gray;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: 10%;
+  opacity: 0.8;
+}
+
+.portfolio-image:hover {
+  opacity: 1.0;
+}
+
+.portfolio-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  display: block;
+  position: relative;
+  font-size: 40px;
+  font-family: 'Yellowtail', cursive;
+}
+
+.project-description {
+  margin-top: -8%;
+  color: #484848;
+}
+
+.image-anchor {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* End Portfolio */
+
+/* AboutMe Components */
+.my-pic {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 150px;
+  height: 82px;
+  width: 82px;
+  border-radius: 50%;
+}
+
+.about-me-header {
+  position: relative;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  top: 152px;
+  font-size: 56px;
+  font-family: 'Yellowtail', cursive;
+  font-weight: 800px;
+}
+
+.about-me {
+  position: relative;
+  text-align: center;
+  top: 155px;
+}
+/* End AboutMe */
+
+
+
+
+
+
+
+
+
+
+
