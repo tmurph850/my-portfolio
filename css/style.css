@@ -61,7 +61,7 @@ body {
 
 .col-6 {
   position: relative;
-  float: left;
+  /*float: left;*/
   width: 50%;
   padding-left: 15px;
   padding-right: 15px;
@@ -228,6 +228,9 @@ img {
 .project-description {
   margin-top: -8%;
   color: #484848;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .image-anchor {
@@ -404,7 +407,7 @@ img {
   }
 }
 
-@media only screen and (max-width: 420px) and (orientation: portrait) {
+@media only screen and (min-width: 360px) and (max-width: 420px) and (orientation: portrait) {
   .name {
     font-size: 34px;
   }
