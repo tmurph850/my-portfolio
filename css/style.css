@@ -482,10 +482,25 @@ img {
   }
 }
 
+@media only screen and (min-width: 450px) and (max-width: 600px) and (orientation: landscape) {
+  .my-pic {
+    top: 100px;
+  }
+
+ .about-me-header {
+  top: 55px;
+ }
+
+ .about-me {
+  top: 8px;
+ }
+}
+
 @media only screen and (min-width: 390px) and (max-width: 440px) and (orientation: landscape) {
   .menu {
     min-height: 64px; 
   }
+
 }
 
 @media only screen and (min-width: 460px) and (max-width: 801px) and (orientation: portrait) {
