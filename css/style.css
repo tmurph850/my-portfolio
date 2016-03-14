@@ -254,7 +254,7 @@ img {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  top: 152px;
+  top: 120px;
   font-size: 56px;
   font-family: 'Yellowtail', cursive;
   font-weight: 800;
@@ -263,7 +263,7 @@ img {
 .about-me {
   position: relative;
   text-align: center;
-  top: 155px;
+  top: 80px;
 }
 /* End AboutMe */
 
