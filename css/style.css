@@ -122,10 +122,11 @@ img {
 }
 
 .menu-items {
+  display: block;
+  position: relative;
   width:50%;
   margin: auto;
   padding-top: 2%;
-
 }
 
 .menu-items a {
@@ -136,7 +137,6 @@ img {
   font-size: 20px;
   color: #ffffff;
   margin: auto;
-
 }
 
 .menu-items a:hover {
@@ -163,6 +163,94 @@ img {
 
 .icons i:hover {
   color:#99e6ff;
+}
+
+/* Responsive Menu Changes */
+@media only screen and (max-width: 1150px) {
+  .menu{
+    background-size: 8%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .menu {
+    background-size: 10%;
+    background-position: 50px 38%;
+  }
+
+  .menu-items a {
+    font-size: 18px;
+  }
+
+  .icons i {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 549px) {
+  .menu {
+    background-position: 35px 38%;
+  }
+
+  .menu-items {
+    width: 75%;
+  }
+
+  .menu-items a {
+    padding: 7px 8px;
+  }
+
+  .icons {
+    margin-top: 2%;
+  }
+
+  .icons i {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .menu {
+    background-position: 20px 25%;
+  }
+
+  .menu-items {
+    top: 35px;
+    width: 58%;
+  }
+
+  .menu-items a {
+    padding: 4px 5px;
+    font-size: 16px;
+  }
+
+  .icons {
+    margin-top: -4%;
+  }
+
+  .icons i {
+    padding: 2px;
+    font-size: 19px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .menu {
+    background-size: 12%;
+    background-position: 12px 15%;
+  }
+
+  .menu-items {
+    width: 75%;
+  }
+
+  .menu-items a {
+    padding: 2px 3px;
+  }
+
+  .icons {
+    margin-top: -8%;
+  }
 }
 /* End Menu */
 
