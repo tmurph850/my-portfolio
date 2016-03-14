@@ -177,6 +177,8 @@ img {
 }
 
 .footer-menu {
+  display: block;
+  padding-top: 10px;
   min-height: 20px;
   opacity: 0.8;
 }
@@ -311,6 +313,7 @@ img {
 }
 
 .about-me {
+  display: block;
   position: relative;
   text-align: center;
   top: 80px;
@@ -393,6 +396,10 @@ img {
     width: 100%;
   }
 
+  .about-me {
+    margin-bottom: 30%;
+  }
+
 }
 
 @media only screen and (max-width: 440px) {
@@ -421,6 +428,10 @@ img {
 
   .name {
     font-size: 40px;
+  }
+
+  .about-me {
+    margin-bottom: 34%;
   }
 }
 
@@ -480,6 +491,10 @@ img {
 @media only screen and (min-width: 460px) and (max-width: 801px) and (orientation: portrait) {
   .portfolio-title {
     margin-top: 28%;
+  }
+
+  .my-pic {
+    top: 180px;
   }
 }
 
