@@ -482,7 +482,7 @@ img {
   }
 }
 
-@media only screen and (min-width: 450px) and (max-width: 600px) and (orientation: landscape) {
+@media only screen and (min-width: 450px) and (max-width: 700px) and (orientation: landscape) {
   .my-pic {
     top: 100px;
   }
