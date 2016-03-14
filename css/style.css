@@ -124,7 +124,7 @@ img {
 .menu-items {
   display: block;
   position: relative;
-  width:50%;
+  width:65%;
   margin: auto;
   padding-top: 2%;
 }
@@ -164,107 +164,19 @@ img {
 .icons i:hover {
   color:#99e6ff;
 }
-
-/* Responsive Menu Changes */
-@media only screen and (max-width: 1150px) {
-  .menu{
-    background-size: 8%;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  .menu {
-    background-size: 10%;
-    background-position: 50px 38%;
-  }
-
-  .menu-items a {
-    font-size: 18px;
-  }
-
-  .icons i {
-    font-size: 25px;
-  }
-}
-
-@media only screen and (max-width: 549px) {
-  .menu {
-    background-position: 35px 38%;
-  }
-
-  .menu-items {
-    width: 75%;
-  }
-
-  .menu-items a {
-    padding: 7px 8px;
-  }
-
-  .icons {
-    margin-top: 2%;
-  }
-
-  .icons i {
-    font-size: 22px;
-  }
-}
-
-@media only screen and (max-width: 440px) {
-  .menu {
-    background-position: 20px 25%;
-  }
-
-  .menu-items {
-    top: 35px;
-    width: 58%;
-  }
-
-  .menu-items a {
-    padding: 4px 5px;
-    font-size: 16px;
-  }
-
-  .icons {
-    margin-top: -4%;
-  }
-
-  .icons i {
-    padding: 2px;
-    font-size: 19px;
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  .menu {
-    background-size: 12%;
-    background-position: 12px 15%;
-  }
-
-  .menu-items {
-    width: 75%;
-  }
-
-  .menu-items a {
-    padding: 2px 3px;
-  }
-
-  .icons {
-    margin-top: -8%;
-  }
-}
 /* End Menu */
 
 /* Home-Page Components */
 .name {
   position: relative;
   display: block;
-  max-width: 100%;
+  width: 100%;
   font-family: 'Yellowtail', cursive;
   font-size: 60px;
   font-weight: 800;
   text-align: center;
   color: #000000;
-  margin-top: 19%;
+  top: 37.5%;
 }
 
 .decoration-bar {
@@ -306,7 +218,7 @@ img {
 .portfolio-title {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10%;
+  margin-top: 11%;
   display: block;
   position: relative;
   font-size: 40px;
@@ -345,7 +257,7 @@ img {
   top: 152px;
   font-size: 56px;
   font-family: 'Yellowtail', cursive;
-  font-weight: 800px;
+  font-weight: 800;
 }
 
 .about-me {
@@ -355,7 +267,149 @@ img {
 }
 /* End AboutMe */
 
+/* Media Queries */
+@media only screen and (max-width: 1150px) {
+  .menu {
+    background-size: 8%;
+  }
 
+  .portfolio-title {
+    margin-top: 18%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .menu {
+    background-size: 10%;
+    background-position: 50px 38%;
+  }
+
+  .menu-items a {
+    font-size: 18px;
+  }
+
+  .icons i {
+    font-size: 25px;
+  }
+
+  .decoration-bar {
+    height: 10%;
+  }
+
+  .name {
+    font-size: 46px;
+  }
+}
+
+@media only screen and (max-width: 549px) {
+  .menu {
+    background-position: 35px 38%;
+  }
+
+  .menu-items {
+    width: 75%;
+  }
+
+  .menu-items a {
+    padding: 7px 8px;
+  }
+
+  .icons {
+    margin-top: 2%;
+  }
+
+  .icons i {
+    font-size: 22px;
+  }
+
+  .portfolio-title {
+    margin-top: 25%;
+  }
+
+}
+
+@media only screen and (max-width: 440px) {
+  .menu {
+    background-position: 10px 25%;
+  }
+
+  .menu-items {
+    top: 35px;
+    width: 65%;
+  }
+
+  .menu-items a {
+    padding: 4px 5px;
+    font-size: 16px;
+  }
+
+  .icons {
+    margin-top: -7%;
+  }
+
+  .icons i {
+    padding: 2px;
+    font-size: 20px;
+  }
+
+  .name {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .menu {
+    min-height: 65px;
+    background-size: 12%;
+    background-position: 8px 15%;
+  }
+
+  .menu-items {
+    width: 75%;
+  }
+
+  .menu-items a {
+    padding: 2px 3px;
+  }
+
+  .icons {
+    margin-top: -8%;
+  }
+
+  .name {
+    font-size: 25px;
+  }
+
+  .portfolio-title {
+    margin-top: 28%;
+  }
+}
+
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+  .menu {
+    min-height: 55px;
+    height: 6%;
+  }
+
+  .menu-items a {
+    font-size: 17px;
+  }
+
+  .icons {
+    margin-top: -5%;
+  }
+
+  .name {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 420px) and (orientation: portrait) {
+  .name {
+    font-size: 34px;
+  }
+}
+/* End Media Queries*/
 
 
 
