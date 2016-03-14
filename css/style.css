@@ -62,10 +62,11 @@ body {
 .col-6 {
   position: relative;
   float: left;
-  display: block;
   width: 50%;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .clearfix:before,
@@ -210,10 +211,18 @@ img {
   margin-top: 1%;
   margin-bottom: 10%;
   opacity: 0.8;
+  max-width: 100%;
 }
 
 .portfolio-image:hover {
   opacity: 1.0;
+}
+
+.image-anchor {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .portfolio-title {
@@ -224,6 +233,7 @@ img {
   position: relative;
   font-size: 40px;
   font-family: 'Yellowtail', cursive;
+  max-width: 100%;
 }
 
 .project-description {
@@ -232,11 +242,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-}
-
-.image-anchor {
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 100%;
 }
 /* End Portfolio */
 
@@ -262,6 +268,7 @@ img {
   font-size: 56px;
   font-family: 'Yellowtail', cursive;
   font-weight: 800;
+  max-width: 100%;
 }
 
 .about-me {
@@ -280,7 +287,13 @@ img {
   .portfolio-title {
     margin-top: 18%;
   }
+
+  .portfolio-image {
+    width: 460px;
+    height: 75%;
+  }
 }
+
 
 @media only screen and (max-width: 750px) {
   .menu {
@@ -303,6 +316,12 @@ img {
   .name {
     font-size: 46px;
   }
+
+  .portfolio-image {
+    width: 316px;
+    height: 68%;
+  }
+
 }
 
 @media only screen and (max-width: 549px) {
@@ -328,6 +347,11 @@ img {
 
   .portfolio-title {
     margin-top: 25%;
+  }
+
+  .col-6 {
+    float: none;
+    width: 100%;
   }
 
 }
