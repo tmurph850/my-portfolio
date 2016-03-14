@@ -432,15 +432,21 @@ img {
   }
 }
 
-@media only screen and (min-width: 360px) and (max-width: 420px) and (orientation: portrait) {
-  .name {
-    font-size: 34px;
-  }
-}
-
 @media only screen and (min-width: 390px) and (max-width: 440px) and (orientation: landscape) {
   .menu {
     min-height: 64px; 
+  }
+}
+
+@media only screen and (min-width: 460px) and (max-width: 801px) and (orientation: portrait) {
+  .portfolio-title {
+    margin-top: 28%;
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 420px) and (orientation: portrait) {
+  .name {
+    font-size: 34px;
   }
 }
 /* End Media Queries*/
