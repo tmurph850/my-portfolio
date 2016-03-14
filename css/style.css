@@ -362,7 +362,7 @@ img {
 
 @media only screen and (max-width: 350px) {
   .menu {
-    min-height: 65px;
+    min-height: 62px;
     background-size: 12%;
     background-position: 8px 15%;
   }
@@ -410,6 +410,13 @@ img {
 @media only screen and (min-width: 360px) and (max-width: 420px) and (orientation: portrait) {
   .name {
     font-size: 34px;
+  }
+}
+
+@media only screen and (min-width: 390px) and (max-width: 440px) and (orientation: landscape) {
+  .menu {
+    min-height: 64px;
+    
   }
 }
 /* End Media Queries*/
