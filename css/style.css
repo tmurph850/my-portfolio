@@ -172,8 +172,16 @@ img {
   padding: 5px;
 }
 
-.icons i:hover {
-  color:#99e6ff;
+.fa-twitter:hover {
+  color: #99e6ff;
+}
+
+.fa-linkedin:hover {
+  color: #4d94ff;
+}
+
+.fa-github:hover {
+  color: #8cff66;
 }
 
 .footer-menu {
@@ -198,10 +206,6 @@ img {
   font-size: 20px;
   text-shadow: 1px 1px 1px #181818;
   padding: 5px;
-}
-
-.footer-menu-icons i:hover {
-  color:#99e6ff;
 }
 
 .signature p {
