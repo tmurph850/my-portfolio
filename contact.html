@@ -26,19 +26,57 @@
 				</div>
 			</nav>
 		</header>
-		<div class="map-canvas" id="map-canvas"></div>
+		<div class="map" id="map"></div>
 	</div>
 	<script>
     	function initMap() {
+  			var customMapType = new google.maps.StyledMapType([
+      			{
+        			featureType: 'water',
+        			stylers: [{color: '#48cccd'}]
+      			},
+      			{
+      				featureType: 'poi.park',
+      				elementType: 'geometry',
+      				stylers: [{color: '#4e9258'}, {saturation: 1}]
+      			},
+      			{
+      				featureType: 'road.local',
+      				elementType: 'geometry.stroke',
+      				stylers: [{color: '#181818'}]
+      			},
+      			{
+      				featureType: 'landscape',
+      				elementType: 'geometry.fill',
+      				stylers: [{color: '#ffffff'}]
+      			},
+      			{
+      				featureType: 'road.highway',
+      				elementType: 'geometry.fill',
+      				stylers: [{color: '#ff0000'}]
+      			},
+      			{
+      				featureType: 'road.highway',
+      				elementType: 'geometry.stroke',
+      				stylers: [{color: '#484848'}]
+      			}
+    		], {
+      			name: 'Custom Style'
+  			});
+  			var customMapTypeId = 'custom_style';
   			// Create a new map with Tallahassee at the center
   			var tallahassee = {lat: 30.4490825, lng: -84.2969548};
-  			var map = new google.maps.Map(document.getElementById('map-canvas'), {
-    			center: tallahassee,
-    			scrollwheel: false,
-    			disableDefaultUI: true,
-    			zoom: 13
+  			var map = new google.maps.Map(document.getElementById('map'), {
+   			 	zoom: 13,
+    			center: tallahassee,  // Brooklyn.
+    			mapTypeControlOptions: {
+      				mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
+    			}
   			});
-   		};
+
+  			map.mapTypes.set(customMapTypeId, customMapType);
+  			map.setMapTypeId(customMapTypeId);
+		}
 	</script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlj0iFLYase_apx9OgDqAG4-aj0pN4Ric&callback=initMap"></script>
 </body>

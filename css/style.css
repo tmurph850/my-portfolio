@@ -321,7 +321,7 @@ img {
 /* End AboutMe */
 
 /*Google Map Styling*/
-#map-canvas {
+#map {
   position: absolute;
   width: 100%;
   height: 100%;
