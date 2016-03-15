@@ -11,7 +11,7 @@
     <title>Tim Murphy:Front-End Developer</title>
 </head>
 <body>
-	<div class="container">
+	<div class="wrapper">
 		<header>
 			<nav class="menu" id="menu">
 				<div class="menu-items">
@@ -26,18 +26,20 @@
 				</div>
 			</nav>
 		</header>
+		<div class="map-canvas" id="map-canvas"></div>
 	</div>
-	<footer>
-		<nav class="footer-menu">
-			<div class="footer-menu-icons">
-				<a href="https://twitter.com/tmurph_850"><i class="fa fa-twitter"></i></a>
-				<a href="https://www.linkedin.com/in/tmurph850"><i class="fa fa-linkedin"></i></a>
-				<a href="https://github.com/tmurph850"><i class="fa fa-github"></i></a>
-			</div>
-			<div class="signature">
-				<p>&#169; Tim Murphy 2016</P>
-			</div>
-		</nav>
-	</footer>
+	<script>
+    	function initMap() {
+  			// Create a new map with Tallahassee at the center
+  			var tallahassee = {lat: 30.4490825, lng: -84.2969548};
+  			var map = new google.maps.Map(document.getElementById('map-canvas'), {
+    			center: tallahassee,
+    			scrollwheel: false,
+    			disableDefaultUI: true,
+    			zoom: 13
+  			});
+   		};
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlj0iFLYase_apx9OgDqAG4-aj0pN4Ric&callback=initMap"></script>
 </body>
 </html>
