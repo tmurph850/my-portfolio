@@ -11,26 +11,34 @@
     <title>Tim Murphy:Front-End Developer</title>
 </head>
 <body>
-	<div class="wrapper">
-		<header>
+    <div class="wrapper">
+        <header>
       <!-- Menu -->
-			<nav class="menu" id="menu">
-				<div class="menu-items">
-					<a class="menu-items-a" href="index.html">home</a>
-					<a class="menu-items-a" href="aboutme.html">about me</a>
-					<a class="menu-items-a" href="portfolio.html">portfolio</a>
-				</div>
-				<div class="icons">
-					<a href="https://twitter.com/tmurph_850"><i class="fa fa-twitter"></i></a>
-					<a href="https://www.linkedin.com/in/tmurph850"><i class="fa fa-linkedin"></i></a>
-					<a href="https://github.com/tmurph850"><i class="fa fa-github"></i></a>
-				</div>
-			</nav>
-		</header>
-		<div class="map" id="map"></div>
-	</div>
+            <nav class="menu" id="menu">
+                <div class="menu-items">
+                    <a class="menu-items-a" href="index.html">home</a>
+                    <a class="menu-items-a" href="aboutme.html">about me</a>
+                    <a class="menu-items-a" href="portfolio.html">portfolio</a>
+                </div>
+                <div class="icons">
+                    <a href="https://twitter.com/tmurph_850"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/tmurph850"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/tmurph850"><i class="fa fa-github"></i></a>
+                </div>
+            </nav>
+        </header>
+    <div class="contact-info" id="contact-info">
+        <h1 class="contact-header">Let's get in touch!</h1>
+        <a href="mailto:tim@timothy-murphy.com" class="email-link">TIM@TIMOTHY-MURPHY.COM</a>
+        <div class="top-bar"></div>
+        <div class="bottom-bar"></div>
+        <div class="left-bar"></div>
+        <div class="right-bar"></div>
+    </div>
+        <div class="map" id="map"></div>
+    </div>
   <!-- Google Map -->
-	<script>
+    <script>
     function initMap() {
       var customMapType = new google.maps.StyledMapType([
           {
@@ -67,7 +75,7 @@
       });
       var customMapTypeId = 'custom_style';
       // Create a new map with Tallahassee at the center
-      var tallahassee = {lat: 30.445, lng: -84.28};
+      var tallahassee = {lat: 30.4489, lng: -84.28};
       var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,
         disableDefaultUI: true,
@@ -79,7 +87,7 @@
       map.mapTypes.set(customMapTypeId, customMapType);
       map.setMapTypeId(customMapTypeId);
     }
-	</script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlj0iFLYase_apx9OgDqAG4-aj0pN4Ric&callback=initMap"></script>
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlj0iFLYase_apx9OgDqAG4-aj0pN4Ric&callback=initMap"></script>
 </body>
 </html>
