@@ -2,18 +2,10 @@
 var gulp = require('gulp'); 
 
 // Include Our Plugins
-var jshint = require('gulp-jshint');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
 var cssnano = require('gulp-cssnano');
 var htmlmin = require('gulp-htmlmin');
-
-// Lint Task
-gulp.task('lint', function() {
-    return gulp.src('js/*.js')
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'));
-});
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
 
 // Minify CSS
 gulp.task('mincss', function() {
@@ -29,18 +21,16 @@ gulp.task('minify', function() {
     .pipe(gulp.dest('dist'))
 });
 
-// Minify JavaScript
-gulp.task('compress', function() {
-  return gulp.src('js/*.js')
-    .pipe(uglify())
-    .pipe(gulp.dest('dist'));
-});
-
-// Watch Files For Changes
-gulp.task('watch', function() {
-    gulp.watch('js/*.js', ['lint', 'scripts']);
+gulp.task('default', () => {
+    return gulp.src('src/images/*')
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+        }))
+        .pipe(gulp.dest('dist/images'));
 });
 
 
 // Default Task
-gulp.task('default', ['lint', 'mincss', 'minify', 'watch','compress']);
+gulp.task('default', ['mincss', 'minify', 'default']);
