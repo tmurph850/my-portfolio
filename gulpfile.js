@@ -4,8 +4,6 @@ var gulp = require('gulp');
 // Include Our Plugins
 var cssnano = require('gulp-cssnano');
 var htmlmin = require('gulp-htmlmin');
-var imagemin = require('gulp-imagemin');
-var pngquant = require('imagemin-pngquant');
 
 // Minify CSS
 gulp.task('mincss', function() {
@@ -21,16 +19,5 @@ gulp.task('minify', function() {
     .pipe(gulp.dest('dist'))
 });
 
-gulp.task('default', () => {
-    return gulp.src('src/images/*')
-        .pipe(imagemin({
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
-            use: [pngquant()]
-        }))
-        .pipe(gulp.dest('dist/images'));
-});
-
-
 // Default Task
-gulp.task('default', ['mincss', 'minify', 'default']);
+gulp.task('default', ['mincss', 'minify']);
