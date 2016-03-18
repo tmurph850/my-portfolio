@@ -1,7 +1,7 @@
 {
-  "name": "neighborhood-map",
+  "name": "my-portfolio-package",
   "version": "1.0.0",
-  "description": "project5",
+  "description": "package for my personal web-page",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -29,6 +29,7 @@
     "imagemin-pngquant": "^4.2.0"
   },
   "dependencies": {
+    "gulp-imagemin": "^2.4.0",
     "imagemin-pngquant": "^4.2.0"
   }
 }
