@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1  user-scalable=yes">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/tree-favicon.ico"/>
+    <link async href='https://fonts.googleapis.com/css?family=Amaranth|Yellowtail' rel='stylesheet' type='text/css'>
+    <link async rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Tim Murphy:Front-End Developer</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+      <!-- Menu -->
+            <nav class="menu" id="menu">
+                <div class="menu-items">
+                    <a class="menu-items-a" href="index.html">home</a>
+                    <a class="menu-items-a" href="aboutme.html">about me</a>
+                    <a class="menu-items-a" href="portfolio.html">portfolio</a>
+                </div>
+                <div class="icons">
+                    <a href="https://twitter.com/tmurph_850"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/tmurph850"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/tmurph850"><i class="fa fa-github"></i></a>
+                </div>
+            </nav>
+        </header>
+        <!-- contact-info main content -->
+        <div class="contact-info" id="contact-info">
+            <h1 class="contact-header">Let's get in touch!</h1>
+            <a href="mailto:tim@timothy-murphy.com" class="email-link">TIM@TIMOTHY-MURPHY.COM</a>
+            <div class="top-bar"></div>
+            <div class="bottom-bar"></div>
+            <div class="left-bar"></div>
+            <div class="right-bar"></div>
+        </div>
+        <div class="map" id="map"></div>
+    </div>
+  <!-- Google Map -->
+    <script>
+    // Error handler for the google maps api
+    function googleError() {
+        alert("There seems to be an error loading the map!");
+    }
+
+    function initMap() {
+      var customMapType = new google.maps.StyledMapType([
+          {
+            featureType: 'water',
+            stylers: [{color: '#48cccd'}]
+          },
+          {
+            featureType: 'poi.park',
+            elementType: 'geometry',
+            stylers: [{color: '#4e9258'}, {saturation: 1}]
+          },
+          {
+            featureType: 'road.local',
+            elementType: 'geometry.stroke',
+            stylers: [{color: '#000000'}]
+          },
+          {
+            featureType: 'landscape',
+            elementType: 'geometry.fill',
+            stylers: [{color: '#ffffff'}]
+          },
+          {
+            featureType: 'road.highway',
+            elementType: 'geometry.fill',
+            stylers: [{color: '#cce6ff'}]
+          },
+          {
+            featureType: 'road.highway',
+            elementType: 'geometry.stroke',
+            stylers: [{color: '#484848'}]
+          }
+        ], {
+          name: 'Custom Style'
+      });
+      var customMapTypeId = 'custom_style';
+      // Create a new map with Tallahassee at the center
+      var tallahassee = {lat: 30.4489, lng: -84.28};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 13,
+        disableDefaultUI: true,
+        center: tallahassee,  // Brooklyn.
+        mapTypeControlOptions: {
+          mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
+        }
+      });
+      map.mapTypes.set(customMapTypeId, customMapType);
+      map.setMapTypeId(customMapTypeId);
+    }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlj0iFLYase_apx9OgDqAG4-aj0pN4Ric&callback=initMap" onerror="googleError()"></script>
+    <!-- End Google Map -->
+</body>
+</html>
