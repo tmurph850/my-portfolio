@@ -93,6 +93,7 @@ body {
   content: " ";
   display: table;
 }
+
 .clearfix:after,
 .dl-horizontal dd:after,
 .container:after,
@@ -183,9 +184,7 @@ img {
 }
 
 .fa-github:hover {
-  /*color: #8cff66;*/
   color: #a0a0a0;
-  
 }
 
 .footer-menu {
