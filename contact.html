@@ -39,6 +39,11 @@
     </div>
   <!-- Google Map -->
     <script>
+    // Error handler for the google maps api
+    function googleError() {
+        alert("There seems to be an error loading the map!");
+    }
+
     function initMap() {
       var customMapType = new google.maps.StyledMapType([
           {
@@ -88,7 +93,7 @@
       map.setMapTypeId(customMapTypeId);
     }
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlj0iFLYase_apx9OgDqAG4-aj0pN4Ric&callback=initMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlj0iFLYase_apx9OgDqAG4-aj0pN4Ric&callback=initMap" onerror="googleError()"></script>
     <!-- End Google Map -->
 </body>
 </html>
