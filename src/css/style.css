@@ -339,7 +339,7 @@ img {
   transform: translate(-50%, -50%);
   opacity: 0.9;
   text-align: center;
-  min-height: 98px;
+  min-height: 128px;
 }
 
 .contact-header {
@@ -351,6 +351,7 @@ img {
 
 .email-link {
   display: block;
+  text-align: center;
   text-decoration: none;
   padding: .8em 1.5em;
   background-color: #cce6ff;
@@ -422,8 +423,6 @@ img {
   margin-right: -15px;
   z-index: -1;
 }
-/*End Google Map*/
-
 /*End Contact Page*/
 
 /* Media Queries */
@@ -508,7 +507,6 @@ img {
 
   .contact-info {
     min-width: 210px;
-    min-height: 101px;
   }
 
   .email-link {
