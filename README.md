@@ -8,4 +8,5 @@ The logo on the menu was made with Illustrator by yours truly.
 ## Resources 
 * [Google Maps](https://developers.google.com/maps/documentation/javascript)
 * [Font-Awesome](https://fortawesome.github.io/Font-Awesome/)
+* [NPM](https://www.npmjs.com/)
 * [Gulp](http://gulpjs.com/)
