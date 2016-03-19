@@ -328,7 +328,7 @@ img {
 /* End AboutMe */
 
 /*Contact Page*/
-#contact-info {
+.contact-info {
   position: absolute;
   display: block;
   background-color: #ffffff; 
@@ -339,7 +339,7 @@ img {
   transform: translate(-50%, -50%);
   opacity: 0.9;
   text-align: center;
-  min-height: 31px;
+  min-height: 98px;
 }
 
 .contact-header {
